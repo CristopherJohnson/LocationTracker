@@ -1,0 +1,54 @@
+# Characters count in single line
+line_length: 1000
+
+# Lines count in single file
+file_length:
+warning: 500
+error: 1500
+warning_threshold: 1
+maxEmptyLines: 3
+
+# Parameters count in function
+function_parameter_count:
+warning: 10
+error: 15
+
+# Type rules
+type_name:
+excluded:
+- T
+
+# Variable Rules
+variable_name:
+excluded:
+- id
+- to
+- el
+- URL
+- lhs
+- rhs
+- db
+- T
+- ok
+
+type_name:
+excluded:
+- T
+
+nesting:
+type_level:
+warning: 2
+statement_level:
+warning: 10
+
+# Disable rules
+disable_rules:
+- force_cast
+- vertical_whitespace
+- todo
+
+# Excluded files from Swiftlint
+excluded:
+- Pods
+- Source/Pods
+- LocationTrackerTests
